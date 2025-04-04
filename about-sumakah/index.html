@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sumakah Festival</title>
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Topbar Navigation -->
+  <nav class="topbar">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/AboutUs/">About Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section with Video -->
+  <section class="hero-section">
+    <video autoplay muted loop class="video-background">
+      <source src="Sumakah.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay">
+      <div class="title">
+        <span>THE</span>
+        <span>SUMAKAH</span>
+        <span>FESTIVAL</span>
+      </div>
+    </div>
+    <div class="wave-divider">
+      <svg class="animated-wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path id="wave-path" fill-opacity="1"
+          d="M0,160L60,144C120,128,240,96,360,112C480,128,600,192,720,224C840,256,960,256,1080,245.3C1200,235,1320,213,1380,202.7L1440,192V320H0Z">
+        </path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <section class="info-section">
+    <div class="container">
+      <div class="info-container">
+        <img src="images/sumakah-festival.jpg" class="info-image" alt="Sumakah Festival" loading="lazy" />
+        <div class="info-box">
+          <h2 class="reveal">Discover the Sumakah Festival</h2>
+          <p>The Sumakah Festival is a vibrant cultural celebration held in Antipolo City. It highlights:</p>
+          <ul>
+            <li><strong>Suman</strong> – a beloved sticky rice delicacy</li>
+            <li><strong>Mangga</strong> – sweet mangoes grown locally</li>
+            <li><strong>Kasuy</strong> – Antipolo's famous cashew nuts</li>
+            <li><strong>Hamon</strong> – a symbol of community and tradition</li>
+          </ul>
+          <p>It also celebrates Antipolo’s religious heritage and local industries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section with Modal-Triggering Buttons -->
+  <section class="AboutSection">
+    <div class="container">
+      <h2 class="reveal">Explore the Elements of Sumakah</h2>
+
+      <div class="about-buttons">
+        <button class="about-item"
+          data-img="images/Suman.jpeg"
+          data-title="Suman"
+          data-text="Suman is a Filipino rice cake made from glutinous rice cooked in coconut milk, wrapped in banana leaves. It's a delicacy proudly made in Antipolo.">
+          <img src="images/Suman.jpeg" alt="Suman" loading="lazy" />
+          <span>Suman</span>
+        </button>
+
+        <button class="about-item"
+          data-img="images/Mangga.jpeg"
+          data-title="Mangga"
+          data-text="Antipolo is known for its sweet, juicy mangoes, often enjoyed fresh or paired with suman and chocolate or sugar.">
+          <img src="images/Mangga.jpeg" alt="Mangga" loading="lazy" />
+          <span>Mangga</span>
+        </button>
+
+        <button class="about-item"
+          data-img="images/Kasuy.jpeg"
+          data-title="Kasuy"
+          data-text="Kasuy (cashew) farming and processing is a significant local industry. Antipolo's kasuy is among the best in the country.">
+          <img src="images/Kasuy.jpeg" alt="Kasuy" loading="lazy" />
+          <span>Kasuy</span>
+        </button>
+
+        <button class="about-item"
+          data-img="images/Hamakah.png"
+          data-title="Hamaka"
+          data-text="Hamaka refers to traditional wooden sleds once used in Antipolo. It also symbolizes the city's heritage and artistry.">
+          <img src="images/Hamakah.png" alt="Hamaka" loading="lazy" />
+          <span>Hamaka</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Significance of the Sumakah Festival Section -->
+  <section class="AboutSection">
+    <div class="container">
+      <h2 class="reveal">The Significance of Sumakah Festival</h2>
+      <div class="info-box">
+        <p>
+          The Sumakah Festival holds deep significance in the community of Antipolo, not only as a celebration of its rich cultural heritage but also as a symbol of unity. It brings together people from all walks of life, preserving traditional practices while embracing modernity. The festival:
+        </p>
+        <ul>
+          <li><strong>Honors Heritage:</strong> Sumakah is a tribute to the long-standing traditions of Antipolo, showcasing the city's history and culture through food, art, and dance.</li>
+          <li><strong>Promotes Local Industry:</strong> It shines a light on Antipolo's key industries, such as rice cake production (suman), mango farming, and cashew cultivation, supporting local businesses.</li>
+          <li><strong>Religious Significance:</strong> The festival has roots in Antipolo's religious practices, particularly the veneration of Our Lady of Peace and Good Voyage (Nuestra Señora de la Paz y Buen Viaje), the city's patron saint.</li>
+          <li><strong>Fosters Community Bonding:</strong> It serves as a platform for locals to reconnect, share stories, and celebrate what makes Antipolo unique as a thriving, vibrant city.</li>
+        </ul>
+        <p>
+          Overall, the Sumakah Festival is a celebration of community, tradition, and progress—a testament to the enduring spirit of Antipolo and its people.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="aboutModalOverlay" style="display: none;"></div>
+  <div class="about-modal" id="aboutModal" style="display: none;">
+    <button class="modal-close" id="modalCloseBtn">✖</button>
+    <img id="modalImage" alt="Modal image" />
+    <span id="modalTitle"></span>
+    <p id="modalText"></p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Sumakah Festival. All rights reserved.
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+
+</body>
+</html>
