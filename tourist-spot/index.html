@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourist Spot in Antipolo</title>
+  <link rel="stylesheet" href="/style/global-component.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+</head>
+<body class="no-overflow">
+  <header style="display: none;">
+    <div class="card-design" id="header-content-wrapper">
+      <div id="container">
+        <div id="headr">
+          <h1 onclick="window.open('/', '_self')" id="g-name">The Webster</h1>
+          <div class="seperator"></div>
+          <img id="nav-button" src="/img/hamburger-svgrepo-com.svg" />
+        </div>
+        <div id="header-content">
+          <h1 id="name">Simbahan Catedral</h1>
+          <p id="short-des">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div id="controller">
+          <button onclick="prev()"><img src="/img/arrow-sm-left-svgrepo-com.svg" /></button>
+          <div>
+            <p>Scroll</p>
+            <img src="/img/arrow-sm-right-svgrepo-com.svg" />
+          </div>
+          <button onclick="next()"><img src="/img/arrow-sm-right-svgrepo-com.svg"></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div id="nav-scrollable">
+      <div id="section1">
+        <h1 style="font-size: 4em; margin: 0px;">Sumakah Festival</h1>
+        <p>Create by The Webster</p>
+      </div>
+      <hr>
+      <ul id="section2">
+        <li onclick="window.open('/', '_self')">Home</li>
+        <li>About Sumakah Festival</li>
+        <li id="lisec2" onclick="window.open('/tourist-spot/', '_self')">Antipolo's Tourist Spot</li>
+        <li onclick="window.open('/AboutUs/', '_self')">About us</li>
+        <li>Credits & License</li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="top" style="height: 0vh;"></div>
+  <div id="bottom" style="height: 0vh;"></div>
+
+  <main style="display: none;">
+    <h1 id="name-spot"></h1>
+    
+    <p class="description" style="display: none;" id="des-hinulugang-taktak">Here the description about hinulugang taktak</p>
+    <p class="description" style="display: none;" id="des-pinto-art-museum">Here the description about pinto art</p>
+    <p class="description" style="display: none;" id="des-antipolo-cathedral">Here the description about antipolo cathedral</p>
+    <p class="description" style="display: none;" id="des-mount-purro">Here the description about mount purro</p>
+    <p class="description" style="display: none;" id="des-cloud9">Here the description about cloud 9</p>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

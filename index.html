@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Sumakah Festival - A Celebration of culture, food, and tradition</title>
+  <link rel="stylesheet" href="/style/global-component.css">
+  <link rel="stylesheet" href="/style/header-nav.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+</head>
+<body class="no-overflow" page="root">
+  <header>
+    <h1 onclick="window.open('/', '_self')" id="g-name">The Webster</h1>
+    <div class="seperator"></div>
+    <img id="nav-button" src="/img/hamburger-svgrepo-com.svg" />
+  </header>
+
+  <nav>
+    <div id="nav-scrollable">
+      <div id="section1">
+        <h1 style="font-size: 4em; margin: 0px;">Sumakah Festival</h1>
+        <p>Create by The Webster</p>
+      </div>
+      <hr>
+      <ul id="section2">
+        <li>Home</li>
+        <li>About Sumakah Festival</li>
+        <li onclick="window.open('/tourist-spot/', '_self')">Antipolo's Tourist Spot</li>
+        <li onclick="window.open('/AboutUs/', '_self')">About us</li>
+        <li>Credits & License</li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section id="landing">
+      <ul id="textsub-title">
+        <li id="subt">FESTIVAL OF</li>
+        <li id="an">ANTIPOLO</li>
+      </ul>
+      <h1 id="title">SUMAKAH</h1>
+
+      <div id="ico-container">
+        <img src="img/suman.svg" id="suman-left" class="suman-left-art" alt="">
+        <img src="img/mango-svgrepo-com.svg" id="mango-left" class="mango-left-art" alt="">
+        <img src="img/kasoy.svg" id="kasoy-left" class="kasoy-left-art" alt="">
+        <img src="img/Hamaka.svg" id="hamaka" class="hamaka-art" alt="">
+        <img src="img/kasoy.svg" id="kasoy-right" class="kasoy-right-art" alt="">
+        <img src="img/mango-svgrepo-com.svg" id="mango-right" class="mango-right-art" alt="">
+        <img src="img/suman.svg" id="suman-right" class="suman-right-art" alt="">
+      </div>
+      <h1 id="sm-description">A Celebration of&nbsp;<span id="sm-change">tradition</span></h1>
+    </section>
+
+    <section id="about-sumakah">
+      <div id="about-sumakah-container">
+        <img src="img/sumakah-festival.jpg" alt="Sumakah Festival - photo by Joey O. Razon">
+        <figcaption>&copy; PNA photo by Joey O. Razon</figcaption>
+      </div>
+
+      <div id="about-sumakah-textSeg">
+        <h1>Sumakah Festival - A Celebration of culture, food, and tradition</h1>
+        <p>The Sumakah Festival is an annual event held in <a target="_blank" href="https://www.google.com/search?client=firefox-b-d&q=antipolo+city">Antipolo City, Philippines</a>, known for celebrating the city's rich cultural heritage and its famous products like suman, manga, kasoy (cashew), and hamaka (Philippine ham). It's a vibrant festival with parades, street dances, and other cultural performances, and it's a way for the community to showcase its identity and traditions</p>
+        <button>Read more</button>
+      </div>
+    </section>
+
+    
+
+    <section id="tourist-spot">
+      <h1>Antipolo's Tourist Spot</h1>
+      <div id="list">
+
+        <div onclick="window.open('/tourist-spot?location=hinulugang-taktak', '_self')" class="card-design" id="Hinulugang-Taktak">
+          <div id="container">
+            <h1>Hinulugang Taktak</h1>
+          </div>
+        </div>
+
+        <div onclick="window.open('/tourist-spot?location=pinto-art', '_self')" class="card-design" id="Pinto-Art-Museum">
+          <div id="container">
+            <h1>Pinto Art Museum</h1>
+          </div>
+        </div>
+
+        <div onclick="window.open('/tourist-spot?location=antipolo-cathedral', '_self')" class="card-design" id="Antipolo-Cathedral">
+          <div id="container">
+            <h1>Antipolo Cathedral</h1>
+          </div>
+        </div>
+
+        <div onclick="window.open('/tourist-spot?location=mount-purro', '_self')" class="card-design" id="Mount-Purro-Nature-Reserve">
+          <div id="container">
+            <h1>Mount Purro Nature Reserve</h1>
+          </div>
+        </div>
+
+        <div onclick="window.open('/tourist-spot?location=cloud9', '_self')" class="card-design" id="Cloud9">
+          <div id="container">
+            <h1>Cloud 9</h1>
+          </div>
+        </div>
+
+      </div>
+  </main>
+
+  <script src="index.js"></script>
+  <script src="script/header-nav.js" type="module"></script>
+</body>
+</html>

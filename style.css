@@ -1,0 +1,287 @@
+html{scroll-behavior: smooth;}
+body {
+  margin: 0px;
+  background-color: var(--primary-color);
+  overflow-x: hidden;
+}
+header {
+  opacity: 0;
+  pointer-events: none;
+}
+h1 {
+  font-family: "Special Gothic Expanded One";
+}
+
+/* === First Section === */
+#landing {
+  width: 100vw;
+  height: 665px;
+  top: 0;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+#title {
+  margin: 0px;
+  font-size: 6em;
+  opacity: 0;
+}
+.title-anim {
+  opacity: 1 !important;
+  transition: 1s;
+}
+#textsub-title {
+  list-style-type: none;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  width: 580px;
+  transform: translateY(15px);
+  opacity: 0;
+  font-family: "Special Gothic Expanded One";
+}
+#textsub-title li {
+  flex: 1;
+}
+#an {
+  text-align: right;
+}
+#sm-description {
+  margin: 0px;
+  opacity: 0;
+  transform: translateY(-1.2em);
+}
+.sm-in {
+  opacity: 1 !important;
+  transition: 1s ease-in-out;
+}
+.sm-out {
+  opacity: 0 !important;
+  transition: 1s ease-in-out;
+}
+#ico-container {
+  transform: translateY(-65px);
+}
+#ico-container img {
+  width: 80px;
+  transition: 3s;
+  pointer-events: none;
+}
+
+#suman-left {
+  transform: scale(1) translate(0px, 0px);
+}
+#suman-right {
+  transform: scale(1) translateX(0px);
+}
+#kasoy-left {
+  transform: scale(1) translateX(-29px);
+}
+#kasoy-right {
+  transform: scale(1) translateX(29px);
+}
+#hamaka {
+  transform: scale(2.5) translateY(-6px);
+}
+#mango-left {
+  transform: scale(1) translateX(-18px);
+}
+#mango-right {
+  transform: scale(1) translateX(18px);
+}
+
+.suman-left-art {
+  transform: scale(10) translate(-50vw, -50vh) !important;
+}
+.suman-right-art {
+  transform: scale(10) translate(50vw, -50vh) !important;
+}
+.kasoy-left-art {
+  transform: scale(10) translate(-50vw, 50vh) !important;
+}
+.kasoy-right-art {
+  transform: scale(10) translate(50vw, -50vh) !important;
+}
+.hamaka-art {
+  transform: scale(5) translateY(50vw) !important;
+}
+.mango-left-art {
+  transform: scale(10) translateX(-50vw) !important;
+}
+.mango-right-art {
+  transform: scale(10) translateX(50vw) !important;
+}
+
+
+/* === Main === */
+main {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* === About Sumakah Section */
+#about-sumakah {
+  display: flex;
+  padding: 30px;
+  gap: 50px;
+  max-width: 1153px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 0px 60px;
+  opacity: 0;
+}
+#about-sumakah img {
+  width: 220px;
+  height: 320px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid rgb(143, 143, 143);
+  padding: 15px 5%;
+  object-fit: cover;
+}
+#about-sumakah-textSeg {
+  flex: 1;
+  position: relative;
+}
+#about-sumakah-textSeg button {
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+}
+#yt-embed {
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* === Tourist Spot Section === */
+#tourist-spot {
+  padding: 50px 0px;
+  width: 80vw;
+  opacity: 0;
+  text-align: center;
+}
+#tourist-spot > #list {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-rows: auto;
+  justify-content: center;
+}
+.card-design {
+  max-width: 300px;
+  height: 350px;
+}
+
+.card-design > #container {
+  transition: 0.5s;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  padding: 10px;
+}
+.card-design:hover > #container {
+  padding-bottom: 25px;
+}
+
+#Hinulugang-Taktak {
+  background-image: url('img/cover-photo-hinulugang-taktak-1024x682.webp');
+}
+#Pinto-Art-Museum {
+  background-image: url('img/pinto-art.jpg');
+}
+#Antipolo-Cathedral {
+  background-image: url('img/Antipolo_Cathedral_2025-01-26.jpg');
+}
+#Mount-Purro-Nature-Reserve {
+  background-image: url('img/mpn.jpg');
+}
+#Cloud9 {
+  background-image: url('img/Cloud-9-Antipolo-Tour-13.jpg');
+}
+
+@media (max-width: 635px) {
+  #about-sumakah img {
+    width: 50vw;
+    height: 60vw;
+  }
+}
+@media (max-width: 677px) {
+  #landing {
+    height: 80vh;
+  }
+  #textsub-title {
+    width: 85vw;
+  }
+  #title {
+    font-size: 14vw;
+  }
+  #sm-description {
+    font-size: 5vw;
+    width: fit-content;
+  }
+  #ico-container {
+    transform: translateY(-7vw);
+  }
+  #ico-container img {
+    width: 11.5vw;
+  }
+}
+
+@media (max-width: 864px) {
+  #about-sumakah {
+    flex-direction: column;
+    padding: 5vw;
+    gap: 0px;
+    margin: 0px 5vw;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  #about-sumakah img {
+    display: block;
+    margin: 0px auto;
+  }
+  #about-sumakah-textSeg {
+    position: unset;
+  }
+  #about-sumakah-textSeg button {
+    position: unset;
+    bottom: unset;
+    right: unset;
+  }
+}
+
+@media (max-width: 830px) {
+  #tourist-spot-list {
+    flex-direction: column;
+  }
+  .tourist-spot-div {
+    max-width: unset;
+    max-height: 100px;
+    display: flex;
+    align-items: end;
+  }
+  .tourist-spot-div > .title-content {
+    transform: rotate(0deg);
+    top: unset;
+    left: unset;
+  }
+  .tourist-spot-div-click {
+    max-width: unset !important;
+    max-height: unset !important;
+  }
+  .tourist-spot-div-click > .title-content {
+    opacity: 0 !important;
+  }
+  .tourist-spot-div-click  > .content-list {
+    width: 100% !important;
+    padding: 20px !important;
+  }
+}

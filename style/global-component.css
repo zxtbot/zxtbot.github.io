@@ -1,0 +1,86 @@
+:root {
+  --primary-color: #fefae0;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  -webkit-tap-highlight-color: transparent; /*Removing the annoying blue tap effect in chrome*/
+}
+.seperator {
+  flex: 1;
+  height: 0px;
+}
+.no-overflow {
+  overflow: hidden !important;
+}
+body {
+  font-family: 'Open Sans';
+}
+#g-name {
+  font-size: 1.3em !important;
+  font-family: "Special Gothic Expanded One";
+  margin: 0px;
+  text-align: center;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  background-color: #F4C542;
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: 2px inset transparent;
+  transition: 0.5s, color 0.2s;
+  user-select: none;
+  box-sizing: border-box;
+}
+button:hover {
+  border-color: rgb(170, 170, 175);
+}
+figcaption {
+  font-size: 0.8em;
+  margin-top: 5px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: #551A8B;
+  border-bottom: 2px solid transparent;
+  transition: 0.5s;
+}
+a:hover {
+  border-bottom: 2px solid #551A8B;
+}
+
+.card-design {
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  z-index: 1;
+  user-select: none;
+  position: relative;
+  cursor: pointer;
+}
+.card-design::before {
+  background-color: rgba(50, 50, 50, 0.4);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.card-design > #container {
+  flex: 1;
+  border-radius: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  display: flex;
+  color: white;
+  z-index: 3;
+}

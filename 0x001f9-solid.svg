@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="500"
+   height="200"
+   viewBox="0 0 132.29166 52.916666"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1">
+    <g
+       id="g3"
+       transform="translate(1.8867284,-1.0007836)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.1724px;font-family:'Special Gothic Expanded One';-inkscape-font-specification:'Special Gothic Expanded One, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.5445"
+         x="5.5602551"
+         y="40.630863"
+         id="text1"
+         transform="scale(0.93446707,1.0701287)"><tspan
+           id="tspan1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.1724px;font-family:'Special Gothic Expanded One';-inkscape-font-specification:'Special Gothic Expanded One, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.54451"
+           x="5.5602551"
+           y="40.630863">0</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.8815px;font-family:'Special Gothic Expanded One';-inkscape-font-specification:'Special Gothic Expanded One, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.618259"
+         x="41.600704"
+         y="27.823627"
+         id="text2"
+         transform="scale(1.0324888,0.9685335)"><tspan
+           id="tspan2"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.8815px;font-family:'Special Gothic Expanded One';-inkscape-font-specification:'Special Gothic Expanded One, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.61826"
+           x="41.600704"
+           y="27.823627">X001f9</tspan></text>
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.503302"
+         id="rect2"
+         width="78.821648"
+         height="4.4140129"
+         x="43.081791"
+         y="31.100899"
+         ry="0.071193762" />
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.425368"
+         id="rect2-7"
+         width="78.821648"
+         height="3.1528664"
+         x="43.082001"
+         y="37.654732"
+         ry="0.050852686" />
+    </g>
+  </g>
+</svg>
