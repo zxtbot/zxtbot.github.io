@@ -58,7 +58,7 @@ let memberList = [
   {
     name: "Bowen Pinili",
     pos: "Developer",
-    img_location: "/img/member-image/noImage.png"
+    img_location: "/img/member-image/bowen.png"
   },
   {
     name: "Jayden Kyle Regal",
