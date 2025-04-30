@@ -46,6 +46,8 @@ header {
 }
 #headr {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #headr > #nav-button {
   width: 50px;
@@ -68,7 +70,31 @@ header {
 #short-des {
   font-size: 2em;
 }
-
+@media (max-width: 773px) {
+  #name {
+    font-size: 8vw;
+  }
+  #headr {
+    padding: 0px 5vw;
+  }
+  #short-des {
+    font-size: 5vw;
+  }
+  #header-content-wrapper > #container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #header-content {
+    padding: 0px 5vw;
+  }
+  #controller {
+    padding: 0px 5vw;
+  }
+  #headr > #nav-button {
+    width: 7vw;
+    filter: invert(1);
+  }
+}
 #controller {
   display: flex;
 }

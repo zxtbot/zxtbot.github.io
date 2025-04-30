@@ -87,7 +87,21 @@ nav {
 }
 
 
-
+@media (max-width: 980px) {
+  #nav-scrollable {
+    flex-direction: column;
+  }
+  #nav-scrollable > #section1 {
+    flex: unset;
+  }
+  #nav-scrollable hr {
+    display: none;
+  }
+  .nav-click {
+    height: 100vh !important;
+    padding: 10vw 10vw;
+  }
+}
 @media (max-width: 740px) {
   #nav-scrollable h1 {
     font-size: 10vw !important;

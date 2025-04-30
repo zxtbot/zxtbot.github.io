@@ -18,10 +18,15 @@ body {
   font-family: 'Open Sans';
 }
 #g-name {
-  font-size: 1.3em !important;
+  font-size: 1.3em;
   font-family: "Special Gothic Expanded One";
   margin: 0px;
   text-align: center;
+}
+@media (max-width: 773px) {
+  #g-name {
+    font-size: 4vw;
+  }
 }
 
 button {
