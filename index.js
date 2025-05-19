@@ -1,3 +1,4 @@
+window.scrollTo(0, 0);
 // Global
 const header = document.querySelector("header");
 const nav = document.querySelector("nav");
@@ -72,29 +73,22 @@ document.addEventListener("DOMContentLoaded", (e) => {
   const ts = document.getElementById("tourist-spot");
   const parentFruits = Array.from(document.querySelectorAll("#ico-container > img"));
   const small_description = document.getElementById("sm-description");
-  document.getElementById("title").classList.add("title-anim");
-  document.getElementById("textsub-title").classList.add("title-anim");
+  requestAnimationFrame(() => {
+    document.getElementById("title").classList.add("title-anim");
+    document.getElementById("textsub-title").classList.add("title-anim");
 
-  parentFruits.forEach((e) => {
-    e.classList.remove(e.id + "-art");
+    parentFruits.forEach((e) => {
+      e.classList.remove(e.id + "-art");
+    });
+
+    setTimeout(() => {
+      document.body.classList.remove("no-overflow");
+      header.classList.add("title-anim");
+      about_sumakah.classList.add("title-anim");
+      ts.classList.add("title-anim");
+      header.style.pointerEvents = "unset";
+      sm_animation();
+      small_description.classList.add("title-anim");
+    }, 2000);
   });
-
-  setTimeout(() => {
-    document.body.classList.remove("no-overflow");
-    header.classList.add("title-anim");
-    about_sumakah.classList.add("title-anim");
-    ts.classList.add("title-anim");
-    header.style.pointerEvents = "unset";
-    sm_animation();
-    small_description.classList.add("title-anim");
-  }, 2000);
-});
-
-window.addEventListener("load", function (e) {
-  window.scrollTo(0, 0);
-});
-
-window.addEventListener("hashchange", function (e) {
-  e.preventDefault();
-  window.location.reload();
 });
