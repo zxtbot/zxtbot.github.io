@@ -6,7 +6,7 @@ body {
 /* ==== Header == */
 header {
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   padding: 3vw;
   box-sizing: border-box;
   display: flex;
@@ -208,17 +208,60 @@ nav {
 
 /* === Main Content === */
 main {
-  margin-top: 105vh;
+  margin-top: 105dvh;
   height: 100%;
   width: 100vw;
-  min-height: 100vh;
+  min-height: 100dvh;
   box-sizing: border-box;
   background-color: inherit;
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 0px 10px rgb(14, 11, 11);
   z-index: 999;
-  text-align: center;
   padding: 50px;
+  display: flex;
+  gap: 20px;
 }
-main > h1 {
+#container-infos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#name-card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+#name-spot {
   font-family: "Special Gothic Expanded One";
+  margin: 0px;
+  color: white;
+}
+#description-infos {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #c7f9cc;
+  flex: 1;
+}
+
+#map-container {
+  flex: 2;
+  display: flex;
+}
+#map-container > iframe {
+  flex: 1;
+  border-radius: 10px;
+  border: 1px solid #585858;
+  background-color: white;
+}
+@media (max-width: 1000px) {
+  main {
+    flex-direction: column;
+  }
+  #map-container > iframe {
+    height: 60dvh;
+  }
 }

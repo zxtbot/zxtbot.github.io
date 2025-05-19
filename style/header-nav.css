@@ -15,6 +15,9 @@ header {
   transition: 0.5s;
   overflow: hidden;
 }
+header h1 {
+  cursor: pointer;
+}
 #fav {
   width: 90px;
   height: 40px;
@@ -30,6 +33,7 @@ header select {
 }
 header img {
   width: 40px;
+  cursor: pointer;
 }
 
 /* === Nav === */
