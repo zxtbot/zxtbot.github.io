@@ -3,26 +3,6 @@ body {
   background-color: var(--primary-color);
 }
 
-/* === Spalsh === */
-#top {
-  top: fixed;
-  background-color: yellow;
-  width: 100vw;
-  top: 0;
-  height: 50vh;
-  transition: 2s;
-  box-shadow: 0px 0px 10px #aa7400;
-}
-#bottom {
-  position: fixed;
-  background-color: yellowgreen;
-  width: 100vw;
-  height: 50vh;
-  bottom: 0px;
-  transition: 2s;
-  box-shadow: 0px 0px 10px #aa7400;
-}
-
 /* ==== Header == */
 header {
   width: 100vw;

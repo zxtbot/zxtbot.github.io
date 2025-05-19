@@ -10,31 +10,26 @@ const touristSpot = [
   {
     name: "Hinulugang Taktak",
     image_location: "/img/cover-photo-hinulugang-taktak-1024x682.webp",
-    small_des: "Lorem ipsum dolor sit amet consectetur.",
     query: "hinulugang-taktak"
   },
   {
     name: "Pinto Art Museum",
     image_location: "/img/pinto-art.jpg",
-    small_des: "Lorem ipsum dolor sit amet consectetur.",
     query: "pinto-art-museum"
   },
   {
     name: "Antipolo Cathedral",
     image_location: "/img/Antipolo_Cathedral_2025-01-26.jpg",
-    small_des: "Lorem ipsum dolor sit amet consectetur.",
     query: "antipolo-cathedral"
   },
   {
     name: "Mount Purro Nature Reserve",
     image_location: "/img/mpn.jpg",
-    small_des: "Lorem ipsum dolor sit amet consectetur.",
     query: "mount-purro"
   },
   {
     name: "Cloud 9",
     image_location: "/img/Cloud-9-Antipolo-Tour-13.jpg",
-    small_des: "Lorem ipsum dolor sit amet consectetur.",
     query: "cloud9"
   }
 ];
@@ -43,27 +38,9 @@ const touristSpot = [
 function focuSpot(list) {
   document.getElementById("name").innerHTML = list.name;
   document.getElementById("name-spot").innerHTML = list.name;
-  document.getElementById("short-des").innerHTML = list.small_des;
   document.getElementById("header-content-wrapper").style.backgroundImage = `url('${list.image_location}')`;
   document.getElementById("des-" + list.query).removeAttribute("style");
 }
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("top").removeAttribute("style");
-  document.getElementById("bottom").removeAttribute("style");
-  setTimeout(() => {
-    header.removeAttribute("style");
-    main.removeAttribute("style");
-    setTimeout(() => {
-      document.getElementById("top").style.height = "0vh";
-      document.getElementById("bottom").style.height = "0vh";
-      setTimeout(() => {
-        document.body.removeAttribute("class");
-      }, 1000);
-    }, 1500);
-  }, 2000);
-});
 
 
 if (query.has("location")) {
