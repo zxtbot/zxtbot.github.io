@@ -11,11 +11,28 @@ header {
 h1 {
   font-family: "Special Gothic Expanded One";
 }
-
+.headTextTitle {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  justify-content: center;
+}
+.headTextTitle > span {
+  display: block;
+  font-family: "Special Gothic Expanded One";
+  font-size: 3em;
+  transform: translateY(80px);
+  opacity: 0;
+}
+@media (max-width: 1079px) {
+  .headTextTitle > span {
+    font-size: 3.7vw;
+  }
+}
 /* === First Section === */
 #landing {
   width: 100vw;
-  height: 665px;
+  height: 100dvh;
   top: 0;
   display: flex;
   position: relative;
@@ -117,20 +134,41 @@ h1 {
   transform: scale(10) translateX(50vw) !important;
 }
 
+/* === SVG WAVE => B. === */
+.wave-divider {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+.wave-divider svg {
+  display: block;
+  width: 100%;
+  height: 100px;
+}
+
+.wave-divider path {
+  fill: #FFCC80;
+}
+
 
 /* === Main === */
 main {
-  margin-bottom: 100px;
+  padding: 100px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: linear-gradient(to bottom,#FFCC80, #FFAE00, #FFD800);
 }
 
-/* === About Sumakah Section */
+/* === About Sumakah Section 1 */
 #about-sumakah {
   display: flex;
   padding: 30px;
   gap: 50px;
+  width: 80dvw;
   max-width: 1153px;
   background-color: white;
   border-radius: 20px;
@@ -150,20 +188,86 @@ main {
   flex: 1;
   position: relative;
 }
-#about-sumakah-textSeg button {
-  position: absolute;
-  bottom: 20px;
-  right: 60px;
+
+/* === About Sumakah Section 2 */
+#discover-the-sumakah {
+  padding: 200px 0px;
 }
-#yt-embed {
-  margin: 10px;
-  padding: 10px;
+#discover-the-sumakah p, #discover-the-sumakah li {
+  opacity: 0;
+  font-size: 1.2em;
+  transform: translateY(50px);
+  transition: 1s;
+}
+
+/*=== CARD PROFUCT ==*/
+#product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card-product {
   background-color: white;
+  width: 80dvw;
+  max-width: 1024px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  transform: translateY(50px);
+}
+.card-product > img {
+  width: 100px;
+}
+.card-product > div {
+  flex: 1;
+}
+.card-product > div > h1 {
+  margin-bottom: 0px;
+}
+
+
+/* === significance-of-sumakah-festival === */
+#significance-of-sumakah-festival {
+  padding: 100px 0px;
+}
+.info-box {
+  display: block;
+  margin: 0px auto;
+  margin-top: 20px;
+  width: 70dvw;
+  max-width: 1000px;
+  background-color: #ffffff78;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease;
+}
+
+@media (max-width: 826px) {
+  #discover-the-sumakah p, #discover-the-sumakah li, .info-box *, .card-product > div > p {
+    font-size: 3vw;
+  }
+  .card-product > div > h1 {
+    font-size: 4vw;
+  }
+  .card-product > img {
+    width: 15vw;
+  }
+  #discover-the-sumakah {
+    width: 80dvw;
+    max-width: 1153px;
+    text-align: center;
+  }
+  #discover-the-sumakah ul {
+    list-style: none;
+  }
 }
 
 /* === Tourist Spot Section === */
 #tourist-spot {
-  padding: 50px 0px;
+  padding: 100px 0px;
   width: 80vw;
   opacity: 0;
   text-align: center;
@@ -214,9 +318,6 @@ main {
   }
 }
 @media (max-width: 677px) {
-  #landing {
-    height: 80vh;
-  }
   #textsub-title {
     width: 85vw;
   }
@@ -284,4 +385,11 @@ main {
     width: 100% !important;
     padding: 20px !important;
   }
+}
+
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
