@@ -230,7 +230,7 @@ main {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 10px;
+  padding: 30px 10px;
   border-radius: 10px;
   text-align: center;
 }
@@ -254,6 +254,7 @@ main {
 #map-container > iframe {
   flex: 1;
   border-radius: 10px;
+  min-width: 1px;
   border: 1px solid #585858;
   background-color: white;
 }
