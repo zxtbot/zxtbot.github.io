@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 
 
-// Animated wave ====> B.
+// Animated wave ====> By Bowen
 const wave = document.getElementById("wave-path");
 
 function animateWave() {

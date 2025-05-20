@@ -13,7 +13,7 @@ h1 {
 }
 .headTextTitle {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
 }
@@ -24,9 +24,9 @@ h1 {
   transform: translateY(80px);
   opacity: 0;
 }
-@media (max-width: 1079px) {
+@media (max-width: 616px) {
   .headTextTitle > span {
-    font-size: 3.7vw;
+    font-size: 7vw;
   }
 }
 /* === First Section === */
@@ -246,8 +246,11 @@ main {
 }
 
 @media (max-width: 826px) {
-  #discover-the-sumakah p, #discover-the-sumakah li, .info-box *, .card-product > div > p {
+  .card-product > div > p {
     font-size: 3vw;
+  }
+  #discover-the-sumakah p, .info-box *, #discover-the-sumakah li {
+    font-size: 5vw;
   }
   .card-product > div > h1 {
     font-size: 4vw;
@@ -256,12 +259,7 @@ main {
     width: 15vw;
   }
   #discover-the-sumakah {
-    width: 80dvw;
-    max-width: 1153px;
-    text-align: center;
-  }
-  #discover-the-sumakah ul {
-    list-style: none;
+    padding: 80px 0px;
   }
 }
 
@@ -356,6 +354,15 @@ main {
     position: unset;
     bottom: unset;
     right: unset;
+  }
+  #discover-the-sumakah {
+    width: 80dvw;
+    max-width: 1153px;
+    text-align: center;
+  }
+  #discover-the-sumakah ul {
+    list-style: none;
+    padding: 0px;
   }
 }
 
