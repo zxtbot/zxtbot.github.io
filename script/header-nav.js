@@ -33,7 +33,7 @@ switch(page) {
     pageslist[0].classList.add("navListfocus");
   break;
   case "about-us":
-    pageslist[3].classList.add("navListfocus");
+    pageslist[2].classList.add("navListfocus");
   break;
 
   default: 
